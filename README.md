@@ -4,8 +4,7 @@
 `npm start`  
 ## Server side (Flask Application)  
 `cd server`  
-`source ./application/venv/Scripts/activate`  
-`pip install`  
+`pip install -r requirements.txt`    
 `python run.py`  
 
 
