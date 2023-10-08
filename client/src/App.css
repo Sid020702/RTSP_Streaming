@@ -1,0 +1,123 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+
+}
+
+.container {
+  width: 75%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid grey;
+}
+
+.custom-overlays {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: 40px;
+  padding: 5px;
+}
+
+.custom-overlays button {
+  margin: 0 7px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: lightskyblue;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.custom-overlays button:hover {
+  background-color: rgb(18, 163, 253);
+}
+
+.rtsp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+.rtsp input {
+  font-size: 18px;
+  width: 35%;
+  margin: 2px;
+  padding: 3px 4px;
+}
+
+.rtsp button {
+  font-size: 18px;
+  margin: 2px;
+  cursor: pointer;
+  padding: 3px 4px;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.rtsp button:hover {
+  background-color: darkgrey;
+}
+
+
+#save {
+  background-color: green;
+  color: white;
+}
+
+#save:hover {
+  background-color: rgb(0, 85, 0);
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
