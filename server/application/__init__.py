@@ -2,12 +2,14 @@ from flask import Flask
 from flask_pymongo import PyMongo
 from pymongo.mongo_client import MongoClient
 import os,time
+from dotenv import load_dotenv
+load_dotenv()
 from threading import Thread, Event
 
 # Create a new client and connect to the server
 
 app = Flask(__name__)
-uri = "mongodb+srv://CyberTPG:Sid020702@cluster0.1dmho3j.mongodb.net/?retryWrites=true&w=majority"
+uri = os.getenv("MONGO_URI")
 client = MongoClient(uri)
 # Send a ping to confirm a successful connection
 try:
